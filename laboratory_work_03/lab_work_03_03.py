@@ -1,4 +1,4 @@
-from math import *
+from math import pi
 
 def arctan(x, eps):
     step = 1000000
