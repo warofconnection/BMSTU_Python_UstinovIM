@@ -9,18 +9,18 @@ R = float(input("Введите значение для радиуса R: "))
 x = float(input("Введите значение для переменной X: "))
 y = float(input("Введите значение для переменной Y: "))
 
-flag = 0
+flag = False
 
 if  0 <= x <= R and x**2 + y**2 <= R**2 and -R <= y <= R:
-    flag = 0
+    flag = False
 elif -y <= x <= 0 <= y <= R:
-    flag = 0
+    flag = False
 elif y <= x <= 0 and -R <= y <= 0:
-    flag = 0
+    flag = False
 else:
-    flag = 1
+    flag = True
 
-if flag == 1:
+if flag:
     print("Точка снаружи")
 else:
     print("Точка внутри")
