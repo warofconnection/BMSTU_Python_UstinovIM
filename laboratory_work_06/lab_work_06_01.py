@@ -6,6 +6,9 @@ def lab1():
     # Чтение входных данных из файла
     with open('input.txt', 'r', encoding='utf-8') as f_in:
         lines = f_in.readlines()
+        x = float()
+        y = float()
+
         x, y = float(lines[0].strip())
 
     # Вычисление результатов
@@ -144,7 +147,7 @@ def run_all_labs():
         f_out.write("Результаты выполнения лабораторных работ:\n")
 
 
-    lab1()
+    #lab1()
     lab4()
     lab5()
 
